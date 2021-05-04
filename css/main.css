@@ -21,11 +21,8 @@ img {
     margin: 0 auto;
     border-radius: 15px;
     width: 80vw;
-    min-height: 800px;
-
-    /* margin: 50px 100px; */
-    padding: 30px 50px;
     word-wrap: break-word;
+    padding: 5px;
 }
 .container > h1 {
     text-align: center;
@@ -105,6 +102,7 @@ button {
 ============================= */
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 .flex-row {
     display: flex;
@@ -128,6 +126,7 @@ button {
     -webkit-position: sticky;
     position: sticky;
     top: 0;    
+    z-index: 9999;
 }
 
 .headerStuff {
@@ -299,7 +298,7 @@ footer {
     padding-left: 8px;
 }
 
-.button > div > p, h5{
+.button > div > p, h5, h2{
     color: #fff;
     margin: 0;
 }
@@ -315,6 +314,7 @@ footer {
     background-repeat: no-repeat;
     background-position: top center;
     text-indent: -9999px;
+    text-align: center;
 }
 
 .android{
@@ -325,7 +325,7 @@ footer {
     background-position: center center;
     text-indent: -9999px;
 }
-
+/* button hover */
 .button:hover{
     background-color: #fff;  
     transition: 0.3s;  
@@ -340,9 +340,82 @@ footer {
     color: #000;
     transition: 0.3s; 
 }
-
+.button:hover h2{
+    color: #000;
+    transition: 0.3s; 
+}
 .button:hover .apple{
     background-position: bottom center; 
+} /* button hover ends */
+
+
+/* ===========================================================
+        page styles
+=========================================================== */
+
+/* HOME PAGE STARTS======== */
+
+/* download section starts */
+.download__cont{
+    width: 90%; height: 505px;
+    background-color: #F8D8E0;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 95px;
+    box-sizing: border-box;
+}
+
+.download__cont> .d_left{
+    flex-basis: 1;
+    margin: 0; 
+    position: relative;
+}
+.download__cont> .d_left::before {    
+    content: "";
+    background-image: url('/images/background_heart.gif');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+.v__logo{
+    width: 380px; height: auto;
+    margin: 0 auto;
+}
+.dLogo_text {
+    width: 405px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.download__cont> .d_right{
+    flex-basis: 1;
+}
+.d__bttn__li{
+    margin-bottom: 30px; 
+}
+.d__bttn{
+    width: 386px; height: 125px; 
+}
+.d__bttn > .d__bttn__txt{
+    margin-right: 30px;
+}
+.d__bttn > div > .d__bttn__p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.d__bttn > .apple{
+    width: 60px; height: 75px;
+    background-size: 60px 150px;
+}
+.d__bttn > .android{
+    width: 68px; height: 80px;
+    background-size: 68px 80px;
 }
 
 
@@ -353,9 +426,8 @@ footer {
 
 
 
-/* ===========================================================
-        page styles
-=========================================================== */
+
+/* HOME PAGE ENDS======== */
 
 
 /* ===========================================================
@@ -371,3 +443,10 @@ footer {
         width: 1100px;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    .d_left{
+        margin-bottom: 30px;
+    }
+}
+
