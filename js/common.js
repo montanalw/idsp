@@ -9,5 +9,15 @@ function backToTop(){
   })
 }
 
-
+const VideoController = function(isHovering, videoElement)
+{
+  if(isHovering == false)
+  {
+    videoElement.play();
+  }
+  else if(isHovering == true)
+  {
+    videoElement.pause();
+  }
+}
 
