@@ -1,9 +1,11 @@
 body, html {
     height: 100%;
 }
-
+body{
+    background-image: none;
+}
 .bg {
-    background-image: linear-gradient(#F8D8E0,  #FFFFFF 75%);
+    background: linear-gradient(180deg, rgba(248,216,224,0.8) 0%, rgba(255,255,255,1) 75%);
     background-attachment: fixed;
 }
 
@@ -11,6 +13,10 @@ body, html {
     max-width: 1235px;
     margin: 0 auto;
     height: 100%;
+}
+
+.main{
+    position: relative;
 }
 
 .main_box {
@@ -30,7 +36,7 @@ body, html {
      justify-content: flex-end;
      position: absolute;
      right: 20%;
-     top:7%;
+     top: 50px;
 }
 
 .heading {
@@ -120,7 +126,7 @@ body, html {
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.25);
     border-radius: 20px;
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .team_bio {
@@ -135,19 +141,17 @@ body, html {
 #left {
     z-index: -1;
     position: absolute;
-    left: 0%;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    bottom: -105%;
+    bottom: -200px;
 }
-
 
 #right {
     z-index: -1;
     position: absolute;
-    right: 0%;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    bottom: -105%;
-   
+    bottom: -300px;   
 }
