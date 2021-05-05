@@ -13,6 +13,7 @@ body{
     background-position-y: top;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 260px;
 }
 img {
     display: block;
@@ -128,11 +129,12 @@ button {
     header stuff
 ============================ */
 .header{
-    -webkit-position: sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    position: fixed;
     top: 0;    
     z-index: 9999;
     display: block;
+    transition: top 0.2s ease-in-out;
 }
 
 .headerStuff {
@@ -156,7 +158,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 ul li {
     float : left;
@@ -198,6 +199,9 @@ ul li a{
 }
 .active {
     text-decoration: underline;
+}
+.nav-up {
+    top: -130px;
 }
 
 /* ===========================

@@ -3,6 +3,7 @@ body, html {
 }
 body{
     background-image: none;
+    padding-top: 150px;
 }
 .bg {
     background: linear-gradient(180deg, rgba(248,216,224,0.8) 0%, rgba(255,255,255,1) 75%);
