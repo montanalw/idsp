@@ -11,19 +11,6 @@ function backToTop(){
   })
 }
 
-// VIDEO MOUSEENTER & MOUSELEAVE
-const VideoController = function(isHovering, videoElement)
-{
-  if(isHovering == false)
-  {
-    videoElement.play();
-  }
-  else if(isHovering == true)
-  {
-    videoElement.pause();
-  }
-}
-
 // NAVIGATION SCROLL DOWN
 function scrollNav(){
   // Hide Header on on scroll down
@@ -61,5 +48,18 @@ function scrollNav(){
       }      
       lastScrollTop = st;
   } 
+}
+
+// VIDEO MOUSEENTER & MOUSELEAVE
+const VideoController = function(isHovering, videoElement)
+{
+  if(isHovering == false)
+  {
+    videoElement.play();
+  }
+  else if(isHovering == true)
+  {
+    videoElement.pause();
+  }
 }
 
