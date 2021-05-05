@@ -53,9 +53,12 @@ body{
     margin-bottom: 50px;
 }
 
-.team__group > ul > .col {
-    width: 48%;
-    min-height: 460px;
+.team__group > ul > li{
+    width: 48%;    
+}
+
+.team__group > ul > li > .col {
+    min-height: 430px;
     padding: 50px;
     background-color: white;
     border: 3px solid #F8D8E0;    
@@ -69,10 +72,12 @@ body{
 .title {
     color: #000;
     margin: 0;
+    margin-bottom: 15px;
 }
 .names {
     font-family: 'Pridi', serif;
     font-size: 24px;
+    font-weight: 400;
 }
 .bio {
     font-size: 20px;
@@ -80,9 +85,6 @@ body{
     text-align: center;
     margin: 0; padding: 0;
     margin: 0 auto;    
-}
-.tit_nimbus{
-    margin-bottom: 10px;
 }
 .nimbus__cont{
     margin-bottom: 100px;
