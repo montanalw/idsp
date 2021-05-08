@@ -11,6 +11,7 @@
     </head>
 
     <body class="flex-column">
+<!--HEADER STARTS -->
         <header class="header flex-row">
             <div class="headerStuff flex flex-row">
                 <a class="logo flex flex-row" href="home.html">
@@ -24,21 +25,159 @@
                 </ul>
             </div>
         </header>
+<!-- HEADER ENDS -->
 
-        <div class="main flex flex-column">
-            <div class="container flex flex-column">
-                <h1>insert title</h1>
-                <p>home page</p>
+<!-- BODY STARTS -->
+        <div class="main flex-column">
 
+            <!-- download section starts -->
+            <section class="container flex-row download__cont">
+                <div class = "flex-column d_left">
+                    <h1>
+                        <img class="v__logo" src = "images/irlDater_logo_v.svg" alt = "irlDater logo"/>
+                        <p class="dLogo_text">level up your relationship status</p>
+                    </h1>
+                </div>
+                <div class = "flex-column d_right">
+                    <ul class="flex-column download_list">
+                        <li class="d__bttn__li">
+                            <a class="button flex-row d__bttn" href = "#" title="go to download page">
+                                <div class="flex-column d__bttn__txt">
+                                    <h2>
+                                        download
+                                    </h2>
+                                    <p class="d__bttn__p">for apple ios devices</p>
+                                </div>
+                                <div class="flex-column apple">
+                                    apple
+                                </div>
+                            </a>                                    
+                        </li>
+                        <li>
+                            <a class="button flex-row d__bttn" href = "#" title="go to download page">
+                                <div class="flex-column d__bttn__txt">                                        
+                                    <h2>
+                                        download
+                                    </h2>
+                                    <p class="d__bttn__p">for android devices</p>
+                                </div>
+                                <div class="flex-column android">
+                                    android
+                                </div>
+                            </a>                                    
+                        </li>
+                    </ul> 
+                </div>
+            </section> <!-- download section ends -->
 
+            <!-- video section starts -->
+            <section class="container flex-column vid__cont"> 
+                <h2 class="hidden">
+                    promo video
+                </h2>                
+                <video class="promoVid" 
+                    onmouseenter="VideoController(true, this)"
+                    onmouseleave="VideoController(false, this)"
+                    src="/video/irl_Dater.mp4" loop muted autoplay
+                >
+                </video>
+            </section> <!-- video section ends -->
 
+            <!-- key features starts -->
+            <section class="container flex-column feat__cont">
+                <div class = "flex-column feat__top">
+                    <h2>
+                        our key features
+                    </h2> 
+                    <p>
+                        we provide to you the best choiches for you. <br/>
+                        find your irl_Love with our highly qualified matches you can imagine from our app. here is how to use our app.
+                    </p>
+                </div>
 
+                <div class="flex-column feat__bttm">
+                    <ul class="flex-row f__ul">
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_matches.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    match
+                                </h3>
+                                <p>
+                                    this is how you like another user. click this to see if you match!
+                                </p>
+                            </div>                            
+                        </li>
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_maybes.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    maybe
+                                </h3>
+                                <p>
+                                    maybe means your undecided about the other user. click maybe to add them to “your maybe’s” page to later reconsider if you want to “like” or “dislike”
+                                </p>
+                            </div>                            
+                        </li>
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_dislikes.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    dislike
+                                </h3>
+                                <p>
+                                    dislike someone? that’s fine, move onto another profile by clicking “dislike”
+                                </p>
+                            </div>                            
+                        </li>
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_points.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    point
+                                </h3>
+                                <p>
+                                    by doing interactions with other users, you can gain points that will lead to awesome rewards.
+                                </p>
+                            </div>                            
+                        </li>
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_redeem.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    redeem
+                                </h3>
+                                <p>
+                                    you can share your points with someone you matched with, that way you two can redeem the points together. you can redeem things like movie tickets or even dinner coupons!                                
+                                </p>
+                            </div>                            
+                        </li>
+                        <li class = "flex-column fList__cont">
+                            <img class="feat_icon" src = "images/icon_f_coupons.svg" alt ="match">
+                            <div class="f__text">
+                                <h3>
+                                    coupons
+                                </h3>
+                                <p>
+                                    tafter redeeming points, you can earn coupons with your parnter to share with. you can use these coupons at any places, that have a partnership with our app.
+                                </p>
+                            </div>                            
+                        </li>
+                    </ul>
+                </div>
 
-            </div>
+                <form  action = "html/features.html">
+                    <button type="submit" class="more_bttn">
+                        learn more
+                    </button>
+                </form>
+            </section> <!-- key features ends -->
 
 
         </div>
+<!-- BODY ENDS -->
 
+<!-- FOOTER STARTS -->
         <footer class="flex-row">
             <div class="footerStuff flex-row">
                 <div class="backToTop">
@@ -97,5 +236,6 @@
                 </div>
             </div>            
         </footer>
+<!-- FOOTER ENDS -->
     </body>
 </html>
