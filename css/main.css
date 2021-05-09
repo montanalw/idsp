@@ -128,7 +128,6 @@ button {
     header stuff
 ============================ */
 .header{
-    /* position: -webkit-sticky; */
     position: fixed;
     top: 0;    
     z-index: 9999;
@@ -266,10 +265,12 @@ footer {
 
 .bLogo_text{
     font-size: 24px;  
+    text-align: center;
 }
 
 .bCopy{
     margin-top: 50px;
+    text-align: center;
 }
 
 .backToTop{
@@ -516,9 +517,46 @@ form button:hover{
     }
 }
 
+@media only screen and (min-width: 1100px){
+    .headerStuff, .footerStuff {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+
 @media only screen and (min-width: 900px) {
+    .headerStuff, .footerStuff {
+        width: 900px;
+        margin: 0 auto;
+    }
+    
     .d_left{
         margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 935px) {
+    .headerStuff, .footerStuff {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .headerStuff > .main_menu{
+        width: 55%;
+    }
+
+    .main_menu li a {
+        display: block;
+        color: #000;
+        font-size: 22px;
+        text-align: center;
+        padding: 49px 10px;
     }
 }
 
