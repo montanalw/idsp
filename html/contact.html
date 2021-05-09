@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>contact</title>
+        <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">  
@@ -9,7 +10,6 @@
         <link href="/css/contact.css" rel="stylesheet" type="text/css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src ="/js/common.js"></script>
     </head>
@@ -39,19 +39,19 @@
     
             <section class="flex-row box2">
                 <div class="left flex-column">
-                    <form action = "" class="flex-column form__cont">
+                    <form action = "#" class="flex-column form__cont">
                         <h3 class="formtitle">leave us a message</h3>
                         <div id="fname" class="flex-column form_list">
-                            <label id="fnametext" for="fname" class="form_txt">name</label>
+                            <label id="fnametext" for="fnamebox" class="form_txt">name</label>
                             <input type="text" id="fnamebox" name="fname" placeholder="first-name last-name" class="form_input">
                         </div>
                         <div id="email" class="flex-column form_list">
-                            <label for="emailtext" class="form_txt">email</label>
+                            <label for="emailbox" class="form_txt">email</label>
                             <input type="text" id="emailbox" name="email" placeholder="email adress" class="form_input">
                         </div>
                         <div id="question" class="flex-column form_list">
-                            <label id="qtext" for="question" class="form_txt">your inquirie is</label>
-                            <textarea id="qbox" name="question" placeholder="write your question here"></textarea>
+                            <label id="qtext" for="questionbox" class="form_txt">your inquirie is</label>
+                            <textarea id="questionbox" name="question" placeholder="write your question here"></textarea>
                         </div>
                         <input type="submit" value= "send" class="formbutton">
                     </form>

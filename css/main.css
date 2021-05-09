@@ -416,8 +416,9 @@ footer {
 .dLogo_text {
     width: 405px;
     font-size: 36px;
+    line-height: 1.25em;
     text-align: center;
-    margin-bottom: 0;
+    margin: 30px 0 0;
 }
 
 .download__cont> .d_right{
