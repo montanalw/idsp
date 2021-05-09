@@ -1,0 +1,108 @@
+.about__cont{
+    margin-bottom: 50px;
+}
+
+.box0 {
+    justify-content:space-evenly;
+    width: 100%;
+    min-height: 375px;
+    background: white;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;    
+}
+
+.text1 {
+    font-family: Pridi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 99px;
+    text-align: center;
+    color: #000000;
+    padding-top: 3%;
+}
+
+.text2 {
+    font-family: Pridi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.box{
+    width: 25%;
+    min-width:500px;
+    min-height: 350px;  
+    background: #FFFFFF;
+    border: 3px solid #F8D8E0;
+    box-sizing: border-box;
+    box-shadow: 10px 20px 30px rgba(229, 233, 246, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.box2 {
+    min-height: 415px;
+}
+
+.box4 {
+    min-height: 495px;
+}
+
+.box5 {
+    height: 435px;
+}
+
+.first {
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: center;
+    color: #000000;  
+}
+
+.second {
+    font-family: 'Pridi', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+
+.third {
+    font-size: 24px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #000000;
+}
+
+.download_contain{
+    margin-bottom: 100px;
+}
+
+.download_contain > ul > li {
+    margin-bottom: 0;
+}
+.download_contain > ul > li:first-child{
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:850px) {
+    .download_contain > ul > li:first-child{
+        margin: 0 0 20px;
+    }
+}

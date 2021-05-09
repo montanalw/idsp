@@ -2,95 +2,153 @@
 <html>
     <head>
         <title>about us</title>
-        <link rel="stylesheet" href="../css/about.css">
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+        <link rel="stylesheet" href="../css/about.css" type="text/css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400&display=swap" rel="stylesheet">        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">  
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src ="/js/common.js"></script>
     </head>
 
     <body class="bg">
-
-        <!-- dotted square for background -->
-
-        <div id="dot">
-        <img src="../images/dot-rec.svg" />
-        </div>
-
-        <!-- cont for whole page -->
-        <div id="cont">
-
-        <!-- cont for main first box -->
-
-        <div class="main_box">
-
-
-        <!-- heading with heart icons -->
-
-        <div class="icons_heading">
-            <img class="hearts" src="../images/hearts 1.svg">
-            <h2 class="heading">meet the team</h2>
-            <img class="hearts" src="../images/hearts 1.svg">
-        </div>
-
-        <!-- team illustration -->
-
-        <img id="team" src="../images/theteam.svg" />
-        </div>
-
-        <!-- end of main box -->
-
-        <!-- boxes for each program with teams -->
-
-        <div class="row">
-
-            <div class="colu">
-
-            <p class="title">d3</p>
-
-                <div class="col">
-                    <p class="names">farbod, montana, youn soo</p>
-                    <p class="bio">we started with a low-fidelity prototype which we slowly grew over time into a beautifully designed application. from the color theme, icons, and typography, we did all things related to how irl_Dater is designed.<br>
-                    <br>
-                    we hope you love the looks and features of our app!</p>
-                </div>
-
+<!--HEADER STARTS -->
+        <header class="header flex-row nav-down">
+            <div class="headerStuff flex flex-row">
+                <a class="logo flex flex-row" href="../home.html">
+                    <img src="/images/irlDater_logo.svg" alt="irl_Dater logo">
+                </a>
+                <ul class="flex flex-row main_menu">
+                    <li><a href="../home.html">home</a></li>
+                    <li><a href="features.html">features</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
             </div>
+        </header>
+<!-- HEADER ENDS -->
 
-            <div class="colu">
-
-            <p class="title">fullstack</p>
-
-                <div class="col">
-                    <p class="names">calista, keven</p>
-                    <p class="bio">working along with the D3 students we were able to give direction of how the features will come to life once developed. our duo fullstack web development team is handling all things related to the development progress of irl_Dater, which includes functionality and behavior. <br>
-                    <br>
-                    we can’t wait for everyone to try it!</p>
-                </div>
-
+<!-- dotted square for background -->
+        <div class="main flex-column">
+            <div id="dot">
+                <img src="../images/dot-rec.svg" alt = "dot"/>
             </div>
+        
+<!-- meet the team -->
+            <section class="container flex-column team__cont">        
+                <!-- heading with heart icons -->            
+                <div class="flex-row">
+                    <img class="hearts" src="../images/hearts 1.svg" alt = "heart" />
+                    <h2 class="heading">meet the team</h2>
+                    <img class="hearts" src="../images/hearts 1.svg" alt = "heart" />
+                </div>     
 
-        </div>
+                <!-- team illustration -->            
+                <img id="team" src="../images/theteam.svg" />
+            </section>
 
-        <div class="colu">
+<!-- boxes for each program with teams -->             
+            <section class="container flex-row team__group">
+                <ul class="flex-row space">
+                    <li class="flex-column">
+                        <h2 class="title">d3</h2>        
+                        <div class="flex-column col">
+                            <p class="names">farbod, montana, youn soo</p>
+                            <p class="bio">we started with a low-fidelity prototype which we slowly grew over time into a beautifully designed application. from the color theme, icons, and typography, we did all things related to how irl_Dater is designed.<br>
+                            <br>
+                            we hope you love the looks and features of our app!</p>
+                        </div>
+                    </li>
+                    <li class="flex-column">
+                        <h2 class="title">fullstack</h2>             
+                        <div class="flex-column col">
+                            <p class="names">calista, keven</p>
+                            <p class="bio">working along with the D3 students we were able to give direction of how the features will come to life once developed. our duo fullstack web development team is handling all things related to the development progress of irl_Dater, which includes functionality and behavior. <br>
+                            <br>
+                            we can’t wait for everyone to try it!</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>        
 
-            <p class="title">nimbus</p>
-
+<!-- box for team nimbus -->    
+            <section class="container flex-column nimbus__cont">     
+                <h2 class="title">nimbus</h2>      
                 <div class="nimbus">
                     <p class="team_bio">as team nimbus, we were able to come together and create this delightful dating app. when we first met, we all noticed we enjoyed video games. so we took inspiration from dating simulation games, and the idea of irl_Dater came to life.<br>
                     <br>
                     irl_Dater is meant to help single people meet others in a fun atmosphere. the game aspect of this dating app will allow users to have an exciting time while building meaningful relationships.<br>
-                <br>
-            
-                we had a great time creating irl_Dater, and we hope you enjoy finding your true love!</p>
+                    <br>
+                    we had a great time creating irl_Dater, and we hope you enjoy finding your true love!</p>
+                </div>        
+            </section>             
+              
+            <img id="left" src="../images/left.svg" />
+            <img id="right" src="../images/right.svg" />    
+        </section>        
+
+<!-- FOOTER STARTS -->
+        <footer class="flex-row">
+            <div class="footerStuff flex-row">
+                <div class="backToTop">
+                    <a href="#" title="back to top" id="goTop">
+                        back to top
+                    </a>
+                </div>
+                <div class="bttm_left flex-column">
+                    <h4  class="fTitle_0">pages</h4>
+                    <ul class="bttm_menu">
+                        <li><a href="../home.html">home</a></li>
+                        <li><a href="features.html">features</a></li>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
                 </div>
 
-        </div>
-            <img id="left" src="../images/left.svg" />
-            <img id="right" src="../images/right.svg" />
+                <div class ="bttm_mid flex-column">
+                    <a class="logo flex-column" href="../home.html">
+                        <img src="/images/irlDater_logo.svg" alt="irl_Dater logo">
+                    </a>
+                    <p class="bLogo_text">level lup your relationship status</p>
+                    <p class= "bCopy">© all rights reserved by the company irl_Dater inc.</p>                
+                </div>
 
-
-    </div>
+                <div class="bttm_right flex-column">
+                    <h4 class="fTitle">downloads</h4>
+                    <ul class="flex-column download_list">
+                        <li>
+                            <a class="button flex-row" href = "#" title="go to download page">
+                                <div class="flex-column">
+                                    <h5>
+                                        download
+                                    </h5>
+                                    <p>for apple ios devices</p>
+                                </div>
+                                <div class="flex-column apple">
+                                    apple
+                                </div>
+                            </a>                                    
+                        </li>
+                        <li>
+                            <a class="button flex-row" href = "#" title="go to download page">
+                                <div class="flex-column">                                        
+                                    <h5>
+                                        download
+                                    </h5>
+                                    <p>for android devices</p>
+                                </div>
+                                <div class="flex-column android">
+                                    android
+                                </div>
+                            </a>                                    
+                        </li>
+                    </ul>    
+                </div>
+            </div>            
+        </footer>
+<!-- FOOTER ENDS -->
     </body>
 </html>

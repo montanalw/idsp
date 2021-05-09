@@ -5,27 +5,29 @@ html, body {
     font-family: 'Raleway', sans-serif;
 }
 body{    
-    background: linear-gradient(180deg, rgba(248,216,224,0.8) 0%, rgba(255,255,255,1) 75%);
-    /* background-attachment: fixed; */
+    /* background: linear-gradient(180deg, rgba(248,216,224,0.8) 0%, rgba(255,255,255,1) 75%); */
+    
+    /* background gradation image template */
+    background-image: url('/images/background_pink.svg');    
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 260px;
 }
 img {
     display: block;
 }
 .main {
-    justify-content: center;
-    width: 100vw;
+    justify-content: center;    
 }
-.container { /*this is the white div container*/
-    /* background-color: white; */
+.container { /*this is the div container*/
     justify-content: center;
     margin: 0 auto;
     border-radius: 15px;
-    width: 80vw;
-    min-height: 800px;
-
-    /* margin: 50px 100px; */
-    padding: 30px 50px;
+    width: 80%;
     word-wrap: break-word;
+    padding: 5px;
 }
 .container > h1 {
     text-align: center;
@@ -34,7 +36,7 @@ header {
     background-color:#F8D8E0;
     min-height: 130px;
     max-height: 130px;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 65px;
     box-shadow: 0px 4px 15px 4px rgba(0,0,0,0.25);
 }
@@ -77,11 +79,14 @@ h5 {
     padding: 0;
 }
 
-p {
+p, input, textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: black;
+}
+input {
+    font-weight: 400;
 }
 button {
     font-family: 'Raleway', sans-serif;
@@ -105,6 +110,7 @@ button {
 ============================= */
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 .flex-row {
     display: flex;
@@ -125,9 +131,11 @@ button {
     header stuff
 ============================ */
 .header{
-    -webkit-position: sticky;
-    position: sticky;
+    position: fixed;
     top: 0;    
+    z-index: 9999;
+    display: block;
+    transition: top 0.2s ease-in-out;
 }
 
 .headerStuff {
@@ -135,12 +143,14 @@ button {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;    
 }
 
 .logo {
     width: auto; 
     height: 50px;
     object-fit: cover;
+    justify-content: flex-start;
 }
 
 .logo img {
@@ -151,7 +161,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 ul li {
     float : left;
@@ -194,14 +203,16 @@ ul li a{
 .active {
     text-decoration: underline;
 }
+.nav-up {
+    top: -130px;
+}
 
 /* ===========================
     footer stuff
 ============================ */
-
 footer {  
     background-color: #F8D8E0;
-    width: 100vw;
+    width: 100%;
     border-radius: 30px 30px 0 0; 
     box-shadow: 0px -5px 6px 4px rgba(0,0,0,0.15); 
     box-sizing: border-box;
@@ -215,6 +226,10 @@ footer {
     align-items:flex-start;
     flex-wrap: wrap;
     position: relative;
+}
+
+.fTitle_0{
+    margin-bottom: 10px;
 }
 
 .fTitle{
@@ -259,15 +274,18 @@ footer {
 
 .bLogo_text{
     font-size: 24px;  
+    text-align: center;
 }
 
 .bCopy{
     margin-top: 50px;
+    text-align: center;
 }
 
 .backToTop{
     width: 68px; height: 68px;
     border-radius: 50%;
+    opacity: 0.5;
     background-image: url("/images/icon_top_arrow.svg");
     background-size: 68px 136px;
     background-repeat: no-repeat;
@@ -299,7 +317,15 @@ footer {
     padding-left: 8px;
 }
 
-.button > div > p, h5{
+.button > div > p{
+    color: #fff;
+    margin: 0;
+}
+.button > div > h5{
+    color: #fff;
+    margin: 0;
+}
+.button > div > h2{
     color: #fff;
     margin: 0;
 }
@@ -315,6 +341,7 @@ footer {
     background-repeat: no-repeat;
     background-position: top center;
     text-indent: -9999px;
+    text-align: center;
 }
 
 .android{
@@ -325,7 +352,7 @@ footer {
     background-position: center center;
     text-indent: -9999px;
 }
-
+/* button hover */
 .button:hover{
     background-color: #fff;  
     transition: 0.3s;  
@@ -340,22 +367,157 @@ footer {
     color: #000;
     transition: 0.3s; 
 }
-
+.button:hover h2{
+    color: #000;
+    transition: 0.3s; 
+}
 .button:hover .apple{
     background-position: bottom center; 
-}
-
-
-
-
-
-
-
+} /* button hover ends */
 
 
 /* ===========================================================
         page styles
 =========================================================== */
+
+/* HOME PAGE STARTS======== */
+
+/* download section starts */
+.download__cont{
+    width: 100%; min-height: 500px;
+    background-color: #F8D8E0;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 50px;
+    margin-bottom: 95px;
+    box-sizing: border-box;
+}
+
+.download__cont> .d_left{
+    flex-basis: 1;
+    margin: 0; 
+    position: relative;
+}
+.download__cont> .d_left::before {    
+    content: "";
+    background-image: url('/images/background_heart.gif');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+.v__logo{
+    width: 380px; height: auto;
+    margin: 0 auto;
+}
+.dLogo_text {
+    width: 405px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.download__cont> .d_right{
+    flex-basis: 1;
+}
+.d__bttn__li{
+    margin-bottom: 30px; 
+}
+.d__bttn{
+    width: 386px; height: 125px; 
+}
+.d__bttn > .d__bttn__txt{
+    margin-right: 30px;
+}
+.d__bttn > div > .d__bttn__p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.d__bttn > .apple{
+    width: 60px; height: 75px;
+    background-size: 60px 150px;
+}
+.d__bttn > .android{
+    width: 68px; height: 80px;
+    background-size: 68px 80px;
+}
+
+/* PROMO VID SECTION */
+.vid__cont{    
+    box-shadow: 0px 4px 15px 4px rgba(0,0,0,0.25);
+    border-radius: 0;
+    margin: 0; padding: 0;
+    margin-bottom: 110px;
+}
+.hidden{
+    text-indent: -999px;
+    font-size: 0;
+}
+.promoVid {
+    width: 100%;
+    height: auto;
+}
+
+/* FEATURES SECTION */
+.feat__cont{
+    margin-bottom: 100px;
+}
+.feat__top{
+    margin-bottom: 30px;
+}
+.feat__bttm{
+    margin-bottom: 30px;
+}
+.feat__top > h2{
+    color: #000;    
+}
+.feat__top > p{
+    text-align: center;
+    font-weight: 400;
+}
+.f__ul{
+    width: 100%;
+}
+.fList__cont{
+    width: 27%; 
+    min-width: 235px;
+    min-height: 300px;
+    padding: 40px 20px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.1);
+    justify-content: flex-start;
+}
+.feat_icon{
+    width: 105px; height: 80px;
+    margin-bottom: 30px;
+}
+.f__text{
+    text-align: left;
+    flex-basis: 1;
+}
+.more_bttn{
+    width: 345px;
+    height: 55px;
+    border: none;
+    background-color: #F8D8E0;
+    border-radius: 55px;
+    box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.25);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #EA3958;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* HOME PAGE ENDS======== */
 
 
 /* ===========================================================
@@ -370,4 +532,67 @@ footer {
     .container {
         width: 1100px;
     }
+    .download__cont {
+        width: 100%;
+    }    
 }
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+    .download__cont {
+        width: 90%;
+    }    
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px){
+    .headerStuff, .footerStuff {
+        width: 1000px;
+    }
+    .download__cont {
+        width: 90%;
+    }    
+}
+
+@media screen and (min-width: 936px) and (max-width: 1100px) {
+    .headerStuff, .footerStuff {
+        width: 900px;
+    }
+    .main_menu > li > a {
+        font-size: 22px;
+        padding: 49px 20px;
+    }
+    
+    .d_left{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 935px) {
+    .headerStuff, .footerStuff {
+        width:90%;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 150px;
+    }
+
+    .main_menu > li > a {
+        font-size: 20px;
+        padding: 49px 10px;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .headerStuff > .main_menu{
+        width: 55%;
+    }    
+}
+
+@media screen and (max-width: 736px){
+    .main_menu > li > a {
+        font-size: 20px;
+        padding: 49px 10px;
+    }
+} 
+
