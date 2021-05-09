@@ -15,7 +15,7 @@
     </head>
 
     <body class="flex-column">
-        <header class="header flex-row">
+        <header class="header flex-column">
             <div class="headerStuff flex flex-row">
                 <a class="logo flex flex-row" href="/home.html">
                     <img src="/images/irlDater_logo.svg" alt="irl_Dater logo">
@@ -29,41 +29,82 @@
             </div>
         </header>
 
-        <div class="topcont">
-            <div class="box1">
-                <div class="text1">contact us</div>
-                <div class="text2">do you have anything to talk about? </div>
-                <div class="text2">if you contact us or email us, we will get to you as soon as possible. </div>
-            </div>
-        </div>
+        <div class="container flex-column">
+            <section class="flex-column box1">
+                <h1 class="text1">contact us</h1>
+                <h5 class="text2">do you have anything to talk about? <br/>
+                    if you contact us or email us, we will get to you as soon as possible.
+                </h5>
+            </section>
+    
+            <section class="flex-row box2">
+                <div class="left flex-column">
+                    <form action = "" class="flex-column form__cont">
+                        <h3 class="formtitle">leave us a message</h3>
+                        <div id="fname" class="flex-column form_list">
+                            <label id="fnametext" for="fname" class="form_txt">name</label>
+                            <input type="text" id="fnamebox" name="fname" placeholder="first-name last-name" class="form_input">
+                        </div>
+                        <div id="email" class="flex-column form_list">
+                            <label for="emailtext" class="form_txt">email</label>
+                            <input type="text" id="emailbox" name="email" placeholder="email adress" class="form_input">
+                        </div>
+                        <div id="question" class="flex-column form_list">
+                            <label id="qtext" for="question" class="form_txt">your inquirie is</label>
+                            <textarea id="qbox" name="question" placeholder="write your question here"></textarea>
+                        </div>
+                        <input type="submit" value= "send" class="formbutton">
+                    </form>
+                </div>                    
 
-        <div class="form">
-            <div class="box2">
-                <div>
-                    <div class="formtitle">leave us a message</div>
-                    <div id="fname">
-                        <label id="fnametext" for="fname">name</label>
-                        <input type="text" id="fnamebox" name="fname" placeholder="first_name last_name">
-                    </div>
-                    <div id="email">
-                        <label for="emailtext">email</label>
-                        <input type="text" id="emailbox" name="email" placeholder="email adress">
-                    </div>
-                    <div id="question">
-                        <label id="qtext" for="question">your inquirie is</label>
-                        <textarea id="qbox" name="question" placeholder="write your question here"></textarea>
-                    </div>
-                    <div class="formbutton"><button class="buttonbox">send</button></div>
+                <div class="right flex-column">
+                    <div class = "flex-column info__cont">
+                        <div class="info_list flex-row">
+                            <img class="info_icon" src="/images/icon_location.svg" alt="location image">
+                            <div class="info_txt">
+                                3700 Willingdon Ave. Burnaby,<br>
+                                British Columbia, Canada, V5G 3H2
+                            </div>
+                        </div>
+                        <div class="info_list flex-row">
+                            <img class="info_icon" src="/images/icon_phone.svg" alt="phone">
+                            <div class="sinfo_txt">+1-604-434-5734</div>
+                        </div>
+                        <div class="info_list flex-row">
+                            <img class="info_icon" src="/images/icon_email.svg" alt="a piece of mail">
+                            <div class="info_txt">hello@irl_dater.com</div>
+                        </div>
+                        <div class="sns_icons flex-row">
+                            <ul>
+                                <li>
+                                    <a href = "#" title="go to youtube">
+                                        <img src="/images/icon_youtube.svg" alt="youtube icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "#" title="go to instagram">
+                                        <img src="/images/icon_insta.svg" alt="insta icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "#" title="go to facebook">
+                                        <img src="/images/icon_facebook.svg" alt="facebook icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "#" title="go to twitter">
+                                        <img src="/images/icon_twitter.svg" alt="twitter icon">
+                                    </a>
+                                </li>
+                            </ul>                                
+                        </div>
+                        <div class="map_cont">
+                            <img class="map" src="/images/map.svg" alt="image of map">
+                        </div>
+                    </div>                        
                 </div>
-                <div class="right">
-                    <div class="location"><img src="/images/location.svg" alt="location image"><div class="spacing">3700 Willingdon Ave. Burnaby, British Columbia, Canada, V5G 3H2</div></div>
-                    <div class="phone"><img src="/images/phone.svg" alt="phone"><div class="spacing">+1-604-434-5734</div></div>
-                    <div class="mail"><img src="/images/mail.svg" alt="a piece of mail"><div class="spacing">hello@irl_dater.com</div></div>
-                    <div class="icons"><img src="/images/youtube.svg" alt="youtube icon"><img src="/images/instagram.svg" alt="insta icon"><img src="/images/facebook.svg" alt="facebook icon"><img src="/images/twitter.svg" alt="twitter icon"></div>
-                    <div class="map"><img src="/images/map.svg" alt="image of map"></div>
-                </div>
-            </div>
-        </div>
+            </section>
+        </div>        
 
         <footer class="flex-row">
             <div class="footerStuff flex-row">
@@ -73,7 +114,7 @@
                     </a>
                 </div>
                 <div class="bttm_left flex-column">
-                    <h4>pages</h4>
+                    <h4 class="fTitle_0">pages</h4>
                     <ul class="bttm_menu">
                         <li><a href="/home.html">home</a></li>
                         <li><a href="features.html">features</a></li>
