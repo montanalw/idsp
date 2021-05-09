@@ -164,7 +164,9 @@ body {
 }
 
 button:hover {
-    background-color: white;
+    background-color: #EA3958;
+    color: #fff;
+    transition: 0.3s;
 }
 
 .right {
