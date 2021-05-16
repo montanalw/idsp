@@ -8,7 +8,7 @@ body{
     /* background: linear-gradient(180deg, rgba(248,216,224,0.8) 0%, rgba(255,255,255,1) 75%); */
     
     /* background gradation image template */
-    background-image: url('/images/background_pink.svg');    
+    background-image: url('../images/background_pink.svg');    
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ footer {
     width: 68px; height: 68px;
     border-radius: 50%;
     opacity: 0.5;
-    background-image: url("/images/icon_top_arrow.svg");
+    background-image: url("../images/icon_top_arrow.svg");
     background-size: 68px 136px;
     background-repeat: no-repeat;
     background-position: top center;
@@ -336,7 +336,7 @@ footer {
 
 .apple {
     width: 35px; height: 40px;
-    background-image: url("/images/icon_apple.svg");
+    background-image: url("../images/icon_apple.svg");
     background-size: 32px 80px;
     background-repeat: no-repeat;
     background-position: top center;
@@ -346,7 +346,7 @@ footer {
 
 .android{
     width: 39px; height: 48px;
-    background-image: url("/images/icon_android.svg");
+    background-image: url("../images/icon_android.svg");
     background-size: 39px 48px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -400,7 +400,7 @@ footer {
 }
 .download__cont> .d_left::before {    
     content: "";
-    background-image: url('/images/background_heart.gif');
+    background-image: url('../images/background_heart.gif');
     background-size: cover;
     position: absolute;
     top: 0px;
