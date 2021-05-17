@@ -50,17 +50,3 @@ function scrollNav(){
       lastScrollTop = st;
   } 
 }
-
-// VIDEO MOUSEENTER & MOUSELEAVE
-const VideoController = function(isHovering, videoElement)
-{
-  if(isHovering == false)
-  {
-    videoElement.play();    
-  }
-  else if(isHovering == true)
-  {
-    videoElement.pause();
-  }
-}
-
