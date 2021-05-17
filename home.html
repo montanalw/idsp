@@ -80,10 +80,12 @@
                 <h2 class="hidden">
                     promo video
                 </h2>                
-                <video class="promoVid" 
+                <video class="promoVid" id="myVid"
                     onmouseenter="VideoController(true, this)"
                     onmouseleave="VideoController(false, this)"
-                    src="video/promovideo.mp4" loop muted autoplay
+                    src="video/promovideo.mp4" loop autoplay
+                    type="vidoe/mp4"
+                    onloadstart="this.volume=0.5"
                 >
                 </video>
             </section> <!-- video section ends -->
