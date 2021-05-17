@@ -104,7 +104,7 @@ button {
     font-weight: 300; 
     text-decoration: underline;
 }
-textarea{
+#questionbox{
     min-width: 100%;
     max-width: 100%;
     max-height: min-content;
