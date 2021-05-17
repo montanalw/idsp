@@ -1,7 +1,7 @@
 $(document).ready(function(){
   backToTop()
   scrollNav()
-  document.getElementById("myVid").volume = 0.5
+  document.getElementsByClassName("promoVid")[0].volume = 0.5
 })
 
 // BACK TO TOP FUNCTION
